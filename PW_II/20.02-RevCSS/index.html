@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="meu.css">		
+		<style>
+			.titulo{
+				color:blue;
+			}
+		</style>
+		
+		<script>
+			function cliqueBotao(){
+				alert("Clicou no botão");
+			}
+			
+			function cliqueTitulo(){
+				alert("Clicou no titulo");
+			}
+		</script>
+	</head>
+	<body>
+		<p id="titulo" onclick="cliqueTitulo()">Meu primeiro parágrafo</p>
+		
+		<p class="titulo" style="color:orange">Meu segundo parágrafo</p>
+		
+		<p id="caixa">Meu terceiro parágrafo</p>
+		
+		<p class="titulo">Meu quarto parágrafo</p>
+		
+		<p>Meu quinto parágrafo</p>
+		
+		<button onclick="cliqueBotao()">Clique Aqui</button>
+	</body>
+</html>

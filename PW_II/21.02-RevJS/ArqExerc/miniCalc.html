@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="miniCalc.css">
+		<style>
+			input, button{
+				margin:5px;
+			}
+		</style>
+		<script src="miniCalc.json"></script>
+	</head>
+	
+	<body>
+
+        <div>
+            <h4>Mini Calculadora do JS</h4>
+        </div>
+			<div class="w3-display-middle">
+				<input id="n1" type="number" value="" placeholder="N1"> <br>
+				<input id="n2" type="number" value="" placeholder="N2"> <br><br>
+				<button onclick="somar()">+</button>
+                <button onclick="subtrair()">-</button>
+                <button onclick="dividir()">/</button>
+                <button onclick="multiplicar()">*</button>
+				
+				<br><br>
+				
+				<input type="number" id="n3" placeholder="Resultado" readonly>
+			</div>
+	
+	</body>
+	
+</html>
