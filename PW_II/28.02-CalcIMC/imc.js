@@ -3,6 +3,7 @@
 	peso = document.getElementById("peso");
 	altura = document.getElementById("altura");
 	resultado = document.getElementById("n3");
+	IMC = document.getElementById("IMC");
 		
 function validar(){
 	//manipulando um css com js
@@ -31,36 +32,20 @@ function Calcular(){
 	}
 	else{
 
-        resultado.value = (parseInt(peso.value) / (parseInt(altura.value)*parseInt(altura.value)))
+        resultado.value = peso.value / (altura.value*altura.value);
+	}
+
+	if (resultado.value <=18){
+		IMC.value = "Valores menores que 18 kg/m² – Consideradas pessoas de baixo peso.";
+	} else if (resultado.value >= 18 && resultado.value <= 24) {
+		IMC.value = "Valores entre 18-24 kg/m² – consideradas IMC de pessoas normais.";
+	}  else if (resultado.value >= 25 && resultado.value <= 30) {
+		IMC.value = "Entre 25-30 kg/m² – consideradas pessoas com sobrepeso.";
+	}   else if (resultado.value >= 35 && resultado.value<= 40) {
+		IMC.value = "Entre 35-40 kg/m² – consideradas pessoas com sobrepeso.";
+	} 	else if (resultado.value >= 40) {
+		IMC.value = "Valores > 40kg/m² – pessoas com obesidade grave.";
+	}	else if (resultado.value >= 50) {
+		IMC.value = "Maiores que 50 kg/m² – pessoas com obesidade gravíssima.";
 	}
 }
-
-function nivel(){
-	switch (true) {
-
-		case (Calcular <= 18) :
-			console.log ("Valores menores que 18 kg/m² – Consideradas pessoas de baixo peso.");
-		break;
-		
-		case (Calcular >= 18 && Calcular <= 24):
-			console.log ("Valores entre 18-24 kg/m² – consideradas IMC de pessoas normais.");
-		break;
-		
-		case (Calcular >= 25 && Calcular <= 30):
-			console.log ("Entre 25-30 kg/m² – consideradas pessoas com sobrepeso.");
-		break;
-
-		case (Calcular >= 35 && Calcular<= 40):
-			console.log ("Entre 25-30 kg/m² – consideradas pessoas com sobrepeso.");
-		break;
-
-		case (Calcular >= 40):
-			console.log ("Valores > 40kg/m² – pessoas com obesidade grave.");
-		break;
-
-		case (Calcular >= 50):
-			console.log ("Maiores que 50 kg/m² – pessoas com obesidade gravíssima.");
-		break;
-	}
-}
-
