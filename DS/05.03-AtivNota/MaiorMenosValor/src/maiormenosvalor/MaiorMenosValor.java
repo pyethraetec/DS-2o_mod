@@ -11,28 +11,34 @@ package maiormenosvalor;
 public class MaiorMenosValor {
 
     public static void main(String[] args) {
-       int num=0;
        int maior=0;
-       int menor=0;
+       int num;
        int leituras;
-       Scanner teclado;
-            
-	for (leituras = 10; leituras <= num; leituras = leituras + 1); {
-        
-            System.out.println("Maior e menor");
-            System.out.println("Insira um numero");
-            teclado = new Scanner (System.in);
-            num = teclado.nextInt();   
+       
+        Scanner entrada = new Scanner(System.in);
 
-            if (num > maior) {
-                maior = num;
-            }
+        System.out.print("Quantos numeros vamos analisar?");
+        leituras = entrada.nextInt();
+        
+        System.out.print("Insira o " + leituras+ " numero");
+        num = entrada.nextInt();
+        
+        for (num = 0; num <= leituras; leituras ++){
             
-            if (num < menor); {
-                menor = num;
+        }
+
+            while(leituras <= 10){
+             System.out.print("Numero " + leituras + ": ");
+             num = entrada.nextInt();
+
+             if(num > maior){
+              maior = num;
+             }
+
+             leituras++;
             }
-        System.out.println("Maior número é " + maior);
-	System.out.println("Menor número é " + menor);
+
+        System.out.println("O maior numero digitado é: "+maior);
+ 
         }
     }
-}
