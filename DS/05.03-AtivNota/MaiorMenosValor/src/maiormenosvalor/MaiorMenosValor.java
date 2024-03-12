@@ -20,8 +20,6 @@ public class MaiorMenosValor {
         System.out.print("Quantos numeros vamos analisar?");
         leituras = entrada.nextInt();
         
-        System.out.print("Insira o " + leituras+ " numero");
-        num = entrada.nextInt();
         
         for (num = 0; num <= leituras; leituras ++){
             
