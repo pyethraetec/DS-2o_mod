@@ -16,7 +16,7 @@ public class VerificaNumero {
         Scanner teclado;
         
         
-        for (controle = 10; controle != 0; controle--){
+        for (controle = 1; controle != 0; controle--){
             
             System.out.println("\nInsira um numero");
             teclado = new Scanner (System.in);
