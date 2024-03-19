@@ -38,12 +38,19 @@ public class Calculo {
         switch (this.operador){
             case "+":
             resultado = this.numero1+this.numero2;
+            break;
+            
             case "-":
             resultado = this.numero1-this.numero2;
+            break;
+            
             case "*":
             resultado = this.numero1*this.numero2;
+            break;
+            
             case "/":
             resultado = this.numero1/this.numero2;
+            break;
         }
         return resultado;
         
