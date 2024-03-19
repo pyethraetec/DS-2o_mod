@@ -22,6 +22,8 @@ public class Calculadora {
         conta01.setNumero2(teclado.nextDouble());
                 
         System.out.println("Resultado: "+conta01.resultado());
+        
+        System.out.println("Operador utilizado: "+conta01.getOperador());
     }
     
 }
