@@ -4,7 +4,67 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5728f30-0ce3-4f6a-bc2a-816a0b38f28f" name="Changes" comment="" />
+    <list default="true" id="b5728f30-0ce3-4f6a-bc2a-816a0b38f28f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/androidTest/java/com/example/introactivity/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/androidTest/java/com/example/teste/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/java/com/example/introactivity/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/java/com/example/teste/FirstFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/java/com/example/teste/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/java/com/example/teste/MainActivity2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/java/com/example/teste/SecondFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/layout/fragment_first.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/layout/fragment_second.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/values-land/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/values-w1240dp/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/values-w600dp/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/test/java/com/example/introactivity/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/app/src/test/java/com/example/teste/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20.03-AndroidStudio/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/13.03-IntroAndroidStudio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/13.03-IntroAndroidStudio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,17 +82,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "AnalyzeApkAction.lastApkPath": "C:/Users/Aluno/Documents/pyethra/DS-2o_mod/PAM_I/13.03-IntroAndroidStudio",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/Aluno/Documents/pyethra/DS-2o_mod/PAM_I/13.03-IntroAndroidStudio"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;AnalyzeApkAction.lastApkPath&quot;: &quot;C:/Users/Aluno/Documents/pyethra/DS-2o_mod/PAM_I/13.03-IntroAndroidStudio&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aluno/Documents/pyethra/DS-2o_mod/PAM_I/13.03-IntroAndroidStudio&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Teste" type="Application" factoryName="Application">
       <module name="13.03-IntroAndroidStudio" />
@@ -51,6 +111,17 @@
       <updated>1710377726558</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/13_03_IntroAndroidStudio$Unnamed.ic" NAME="Unnamed Coverage Results" MODIFIED="1710379306079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
