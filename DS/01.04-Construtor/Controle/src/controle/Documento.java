@@ -37,10 +37,11 @@ public class Documento {
         this.valor = valor;
     }
 
-    public Documento(int numero, String titulo, double valor) {
-        this.numero = numero;
-        this.titulo = titulo;
-        this.valor = valor;
+    
+    public Documento(int Numero, String Titulo, double Valor) {
+        this.numero = Numero;
+        this.titulo = Titulo;
+        this.valor = Valor;
     }    
     
 }
