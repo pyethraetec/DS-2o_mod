@@ -20,6 +20,8 @@ public class Exerc_ListaValores {
         tamanho = teclado.nextInt();
         
         int [] lista = new int [tamanho];
+     //tipo de vetor [] nome do vetor = *new* tipo do vetor [tamanho do vetor];
+     //                                                      |-> pode ser preenchido ou não
         
             for (int i=0;i<lista.length; i=i+1){
                 System.out.println("\nInsira os valores: ");
