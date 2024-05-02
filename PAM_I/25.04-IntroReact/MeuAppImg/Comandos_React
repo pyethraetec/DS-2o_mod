@@ -1,0 +1,10 @@
+Comandos React/Expo
+
+//Criando projeto
+npx create-expo-app my-app
+
+//navegando até pasta
+cd my-app
+
+//Iniciando aplicação
+npx expo start
