@@ -20,6 +20,7 @@ export default function LoginForm() {
         autoCapitalize='none' />
             <TextInput style={styles.input} placeholder='PASSWORD' secureTextEntry value={password} onChangeText={setPassword} autoCorrect={false}
         autoCapitalize='none'/>
+
         </View>
         <View style={styles.rememberView}>
             <View style={styles.switch}>
@@ -54,6 +55,7 @@ export default function LoginForm() {
 }
 
 
+//Estilizando
 const styles = StyleSheet.create({
   container : {
     alignItems : "center",
