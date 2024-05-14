@@ -44,31 +44,35 @@ public class Vetores_ImparPar {
         int [] pares = new int [par];
         int [] impares = new int [impar];
         
+        par =0;
+        impar=0;
+        
+        
         for (int i=0;i<numeros.length; i=i+1){           
            //testando numeros
            if (numeros[i]%2==0){
-               pares[i] = numeros[i];
+               pares[par] = numeros[i];
+               ++par;
            } else {
-               impares[i] = numeros[i];
+               impares[impar] = numeros[i];
+               ++impar;
            }
           
         }
         
         
         //par
-        
         for (int i=0;i<pares.length; i=i+1){
-            System.out.println("Total par ["+pares.length+"]");
+            System.out.println("Total par ["+par+"]");
             //imprimindo vetor par
-            System.out.println("Par ["+pares[i]+"] = "+pares[i]);
+            System.out.println("Par ["+i+"] = "+pares[i]);
         }
         
         //impar
-        
         for (int i=0;i<impares.length; i=i+1){
-            System.out.println("Total impar ["+impares.length+"]");
+            System.out.println("Total impar ["+impar+"]");
             //imprimindo vetor impar
-            System.out.println("Impar ["+impares[i]+"] = "+impares[i]);
+            System.out.println("Impar ["+i+"] = "+impares[i]);
         }
         
     }
