@@ -30,7 +30,6 @@
       <div class="w3-center"><br>
         <div onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Fechar Modal">×</div>
       </div>
-    //forms
       <form class="w3-container" action="acessar.php" method="post">
         <div class="w3-section">
           <label><b>Usuario</b></label>
