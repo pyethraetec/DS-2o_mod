@@ -16,10 +16,6 @@ while($linha = mysqli_fetch_array($query)){
 	
 }
 
-
-$u=;
-$s;
-
 $usuario = $_POST["usuario"];
 $senha = $_POST["senha"];
 
