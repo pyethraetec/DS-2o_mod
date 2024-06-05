@@ -103,6 +103,11 @@ public class FormTable extends javax.swing.JFrame {
         scrpTabela.setViewportView(jTable1);
 
         btnRemover.setText("Remover");
+        btnRemover.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoverActionPerformed(evt);
+            }
+        });
 
         btnSair.setText("Sair");
         btnSair.addActionListener(new java.awt.event.ActionListener() {
@@ -277,6 +282,26 @@ public class FormTable extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_btnGravarActionPerformed
+
+    private void btnRemoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverActionPerformed
+        // TODO add your handling code here:
+        
+        int response = JOptionPane.showConfirmDialog(null, "Deseja remover o registro ?", "Confirmação", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+        
+        if (response == JOptionPane.YES_OPTION){
+            
+          DefaultTableModel modelo = (DefaultTableModel)jTable1.getModel();
+          
+          if(jTable1.getSelectedRow()>=0){
+              modelo.removeRow(jTable1.getSelectedRow());
+              jTable1.setModel(modelo);
+          }
+          else{
+              JOptionPane.showMessageDialog(null, "Favor selecionar uma linha");
+          }
+        
+        }   
+    }//GEN-LAST:event_btnRemoverActionPerformed
 
     /**
      * @param args the command line arguments
