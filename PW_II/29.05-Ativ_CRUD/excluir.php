@@ -1,17 +1,24 @@
 
 <?php
     session_start();
-    $conexao = mysqli_connect("localhost","root","","teste");
-      
+
+    //conexão com banco
+    $url = "localhost";
+    $user = "root";
+    $pass = "";
+    $db = "test";
+
+    $conexao = mysqli_connect($url, $user, $pass, $db);
+          
     if($conexao == false){
-      die("A conexão falhou!");
+       die("A conexão falhou!");
     }
 
-    $query = mysqli_query($conexao,"DELETE FROM usuarios WHERE email = '". $_SESSION['email'] . "'");
+    $query = mysqli_query($conexao,"DELETE FROM produtos WHERE Cod  = '". $_SESSION['Cod'] . "'");
 
     if($query == true){
-      $_SESSION["logado"] = false;
-      header("Location:index.php");	
+      $_SESSION["Cod"] = false;
+      header("Location:crud.php");	
     }
     else{
       echo "Erro ao excluir o cadastro!";

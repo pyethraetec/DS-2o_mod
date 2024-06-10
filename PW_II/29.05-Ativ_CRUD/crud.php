@@ -31,12 +31,12 @@ Busca: <input type="text" name="busca" class=""> <input type="submit" value="Env
 
     <?php
 
+    //Conectando com o banco
       $url = "localhost";
       $user = "root";
       $pass = "";
       $db = "test";
 
-      //1° passo - conectar com o banco
       $conexao = mysqli_connect($url, $user, $pass, $db);
           
           if($conexao == false){
@@ -45,8 +45,9 @@ Busca: <input type="text" name="busca" class=""> <input type="submit" value="Env
           
           $query;
           
+          //busca
           if(isset($_POST["busca"]) == true){
-            $query = mysqli_query($conexao,"SELECT * from produtos WHERE produtos LIKE '%" . $_POST["busca"] . "%'");
+            $query = mysqli_query($conexao,"SELECT * from produtos WHERE produto LIKE '%" . $_POST["busca"] . "%'");
           }
           else{
             $query = mysqli_query($conexao,"SELECT * from produtos");
@@ -59,13 +60,14 @@ Busca: <input type="text" name="busca" class=""> <input type="submit" value="Env
           else{
           echo "Mostrando " . mysqli_num_rows($query) . " resultados<br><br>";
 
+          //exibindo cadastros do banco
           while($linha = mysqli_fetch_array($query)){
             echo "<tr>";
             echo "<td>" . $linha["Cod"] . "</td>";
             echo "<td>" . $linha["Produto"] . "</td>";
             echo "<td>" . $linha["Quant"] . "</td>";
             echo "<td>" . $linha["Preco"] . "</td>";
-            echo "<td><a href='./editar.php" . "' class='w3-button w3-orange'>Editar</a> <a href='./excluir.php". "' class='w3-button w3-red'>Excluir</a></td>";
+            echo "<td><a href='./editar.php?cod=Cod" . "' class='w3-button w3-orange'>Editar</a> <a href='./excluir.php". "' class='w3-button w3-red'>Excluir</a></td>";
             echo "</tr>";
           }
 
