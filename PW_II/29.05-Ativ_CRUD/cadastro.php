@@ -27,16 +27,16 @@
       </tr>
       <tr>
         <td>Quantidade:</td>
-        <td><input type="int" name="Quant" required></td>
+        <td><input type="number" name="Quant" required></td>
       </tr>
       <tr>
         <td>Preço:</td>
-        <td><input type="double" name="Preco" required></td>
+        <td><input type="number" step="0.01" name="Preco" required></td>
       </tr>
       <tr>
         <td>
           <br>
-          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large">Cadastrar</button></td>
+          <input type="submit" value="Cadastrar" class="w3-button w3-green w3-large"></td>
         <td align="right">
           <br>
           <a href="./crud.php" class="w3-button w3-red w3-large">Voltar ao Início</a></td>
@@ -57,7 +57,7 @@
     $url = "localhost";
     $user = "root";
     $pass = "";
-    $db = "test";
+    $db = "teste";
 
     $conexao = mysqli_connect($url, $user, $pass, $db);
           

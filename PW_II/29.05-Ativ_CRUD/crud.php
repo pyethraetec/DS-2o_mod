@@ -8,9 +8,10 @@
 
 
 <div class="w3-container w3-display-middle">
+<form action="" method="post" class="w3-xlarge">
   <!--Botao enviar-->
 Busca: <input type="text" name="busca" class=""> <input type="submit" value="Enviar" class="w3-button">
-
+  </form>
 <!--Botao cadastro-->
 <a href="./cadastro.php" class="w3-button w3-blue w3-right">Novo</a>
 
@@ -35,7 +36,7 @@ Busca: <input type="text" name="busca" class=""> <input type="submit" value="Env
       $url = "localhost";
       $user = "root";
       $pass = "";
-      $db = "test";
+      $db = "teste";
 
       $conexao = mysqli_connect($url, $user, $pass, $db);
           
@@ -58,7 +59,7 @@ Busca: <input type="text" name="busca" class=""> <input type="submit" value="Env
             echo "Sem resultados a exibir";
           }
           else{
-          echo "Mostrando " . mysqli_num_rows($query) . " resultados<br><br>";
+          echo "Mostrando " . mysqli_num_rows($query) . " resultados <br><br>";
 
           //exibindo cadastros do banco
           while($linha = mysqli_fetch_array($query)){
@@ -67,7 +68,8 @@ Busca: <input type="text" name="busca" class=""> <input type="submit" value="Env
             echo "<td>" . $linha["Produto"] . "</td>";
             echo "<td>" . $linha["Quant"] . "</td>";
             echo "<td>" . $linha["Preco"] . "</td>";
-            echo "<td><a href='./editar.php?cod=Cod" . "' class='w3-button w3-orange'>Editar</a> <a href='./excluir.php". "' class='w3-button w3-red'>Excluir</a></td>";
+            echo "<td> <a href='./editar.php?cod=".$linha["Cod"] ."'class='w3-button w3-orange'>Editar</a> 
+                       <a href='./excluir.php?cod=".$linha["Cod"]. "' class='w3-button w3-red'>Excluir</a></td>'";
             echo "</tr>";
           }
 

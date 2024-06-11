@@ -6,7 +6,7 @@
     $url = "localhost";
     $user = "root";
     $pass = "";
-    $db = "test";
+    $db = "teste";
 
     $conexao = mysqli_connect($url, $user, $pass, $db);
           
@@ -14,10 +14,9 @@
        die("A conexão falhou!");
     }
 
-    $query = mysqli_query($conexao,"DELETE FROM produtos WHERE Cod  = '". $_SESSION['Cod'] . "'");
+    $query = mysqli_query($conexao," DELETE FROM produtos WHERE cod  = ".$_GET["cod"]);
 
     if($query == true){
-      $_SESSION["Cod"] = false;
       header("Location:crud.php");	
     }
     else{

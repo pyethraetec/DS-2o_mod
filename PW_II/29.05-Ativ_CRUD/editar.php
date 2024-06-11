@@ -14,7 +14,7 @@
 $url = "localhost";
 $user = "root";
 $pass = "";
-$db = "test";
+$db = "teste";
 
 //1° passo - conectar com o banco
 $conexao = mysqli_connect($url, $user, $pass, $db);
@@ -22,9 +22,8 @@ $conexao = mysqli_connect($url, $user, $pass, $db);
   if($conexao == false){
     die("A conexão falhou!");
   }
-  $Cod = $_GET["Cod"];
-  
-  $consulta = mysqli_query($conexao,"SELECT * FROM produtos WHERE Cod = '" . $_SESSION["Cod"]."'");
+
+  $consulta = mysqli_query($conexao,"SELECT * FROM produtos WHERE Cod = " . $_GET["cod"]);
   
   $cadastro =  mysqli_fetch_assoc($consulta);
   
@@ -32,8 +31,8 @@ $conexao = mysqli_connect($url, $user, $pass, $db);
   <form action="" method="post" class="w3-xlarge">
     <table>
       <tr>
-        <td>Cod:</td>
-        <td><input type="int" name="Cod" required value="<?php echo $cadastro["Cod"] ?>"></td>
+        <td>Código:</td>
+        <td><input type="text" name="Cod" readonly="TRUE" required value="<?php echo $cadastro["Cod"] ?>"></td>
       </tr>
       <tr>
         <td>Produto:</td>
@@ -41,16 +40,16 @@ $conexao = mysqli_connect($url, $user, $pass, $db);
       </tr>
       <tr>
         <td>Quant:</td>
-        <td><input type="int" name="Quant" required value="<?php echo $cadastro["Quant"] ?>"></td>
+        <td><input type="number" name="Quant" required value="<?php echo $cadastro["Quant"] ?>"></td>
       </tr>
       <tr>
         <td>Preço:</td>
-        <td><input type="double" name="Preco" required value="<?php echo $cadastro["Preco"] ?>"></td>
+        <td><input type="number" step="0.01" name="Preco" required value="<?php echo $cadastro["Preco"] ?>"></td>
       </tr>
       <tr>
         <td>
           <br>
-          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large">Editar</button></td>
+          <input type="submit" value="Editar" class="w3-button w3-green w3-large"></td>
         <td align="right">
           <br>
           <a href="crud.php" class="w3-button w3-red w3-large">Voltar ao Início</a></td>
@@ -66,10 +65,9 @@ $conexao = mysqli_connect($url, $user, $pass, $db);
     $Quant = $_POST["Quant"];
     $Preco = $_POST["Preco"];
 
-    $query = mysqli_query($conexao,"UPDATE usuarios SET Produto = '$Produto', Quant = '$Quant', Preco = '$Preco'  WHERE Cod ='".$_SESSION["Cod"]."'");
+    $query = mysqli_query($conexao,"UPDATE produtos SET Produto = '$Produto', Quant = '$Quant', Preco = '$Preco'  WHERE Cod =".$_POST["Cod"]);
 
     if($query == true){
-      $_SESSION["Cod"] = $Cod;
       header("Location:crud.php");	
     }
     else{
