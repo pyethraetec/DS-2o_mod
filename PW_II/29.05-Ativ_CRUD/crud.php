@@ -61,16 +61,16 @@ Busca: <input type="text" name="busca" class=""> <input type="submit" value="Env
           else{
           echo "Mostrando " . mysqli_num_rows($query) . " resultados <br><br>";
 
-          //exibindo cadastros do banco
-          while($linha = mysqli_fetch_array($query)){
-            echo "<tr>";
-            echo "<td>" . $linha["Cod"] . "</td>";
-            echo "<td>" . $linha["Produto"] . "</td>";
-            echo "<td>" . $linha["Quant"] . "</td>";
-            echo "<td>" . $linha["Preco"] . "</td>";
-            echo "<td> <a href='./editar.php?cod=".$linha["Cod"] ."'class='w3-button w3-orange'>Editar</a> 
-                       <a href='./excluir.php?cod=".$linha["Cod"]. "' class='w3-button w3-red'>Excluir</a></td>'";
-            echo "</tr>";
+              //exibindo cadastros do banco
+              while($linha = mysqli_fetch_array($query)){
+                echo "<tr>";
+                echo "<td>" . $linha["Cod"] . "</td>";
+                echo "<td>" . $linha["Produto"] . "</td>";
+                echo "<td>" . $linha["Quant"] . "</td>";
+                echo "<td>" . $linha["Preco"] . "</td>";
+                echo "<td> <a href='./editar.php?cod=".$linha["Cod"] ."'class='w3-button w3-orange'>Editar</a> 
+                           <a href='./excluir.php?cod=".$linha["Cod"]. "' class='w3-button w3-red'>Excluir</a></td>'";
+                echo "</tr>";
           }
 
           echo "</table>";  
