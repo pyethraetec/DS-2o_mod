@@ -51,8 +51,8 @@ public class Painel_produto extends javax.swing.JFrame {
         btnSair = new javax.swing.JButton();
         btnRemover = new javax.swing.JButton();
         lblTotalGeral = new javax.swing.JLabel();
-        txfSubtotal = new javax.swing.JTextField();
-        txfTotalGeral = new javax.swing.JTextField();
+        txfSubtotal = new javax.swing.JLabel();
+        txfTotalGeral = new javax.swing.JLabel();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -145,21 +145,12 @@ public class Painel_produto extends javax.swing.JFrame {
 
         lblTotalGeral.setText("Total geral:");
 
-        txfSubtotal.setEditable(false);
-        txfSubtotal.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txfSubtotalActionPerformed(evt);
-            }
-        });
-
-        txfTotalGeral.setEditable(false);
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addGap(20, 20, 20)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(txfCodigo)
@@ -177,7 +168,7 @@ public class Painel_produto extends javax.swing.JFrame {
                         .addGap(47, 47, 47)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblSubtotal)
-                            .addComponent(txfSubtotal, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txfSubtotal, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(lblCodigo)
@@ -185,7 +176,7 @@ public class Painel_produto extends javax.swing.JFrame {
                         .addComponent(lblDescricao)
                         .addGap(210, 210, 210))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(33, Short.MAX_VALUE)
+                .addContainerGap(20, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(btnRemover)
@@ -198,13 +189,13 @@ public class Painel_produto extends javax.swing.JFrame {
                         .addComponent(btnGravar)
                         .addGap(25, 25, 25))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblTotalGeral)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txfTotalGeral, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lblTotalGeral)
+                                .addGap(18, 18, 18)
+                                .addComponent(txfTotalGeral, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addComponent(lblTitulo)
@@ -232,7 +223,7 @@ public class Painel_produto extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txfQuant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txfValorUnit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txfSubtotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txfSubtotal, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnLimpar)
@@ -240,10 +231,10 @@ public class Painel_produto extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txfTotalGeral, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblTotalGeral))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblTotalGeral)
+                    .addComponent(txfTotalGeral, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSair)
                     .addComponent(btnRemover)))
@@ -265,103 +256,129 @@ public class Painel_produto extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txfDescricaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txfDescricaoActionPerformed
+    private void btnRemoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txfDescricaoActionPerformed
+
+        int response = JOptionPane.showConfirmDialog(null, "Deseja remover o registro ?", "Confirmação", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+        if (response == JOptionPane.YES_OPTION){
+            
+            DefaultTableModel modelo = (DefaultTableModel)tblCadastro.getModel();
+            
+            if(tblCadastro.getSelectedRow()>=0){
+                                
+                if (tblCadastro.getSelectedRow()>=0){
+
+                int linha = tblCadastro.getSelectedRow();
+                
+                total = total - Double.valueOf(modelo.getValueAt(linha, 4).toString().replace(",","."));
+                txfTotalGeral.setText(String.valueOf(total));
+                modelo.removeRow(tblCadastro.getSelectedRow());
+                tblCadastro.setModel(modelo);
+                
+                }
+                
+                
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "Favor selecionar uma linha");
+            }
+            
+            
+        }
+        
+        
+        
+        
+    }//GEN-LAST:event_btnRemoverActionPerformed
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         // TODO add your handling code here:
         int response = JOptionPane.showConfirmDialog(null,
-                "Deseja sair?", "Confirmação",
-                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+            "Deseja sair?", "Confirmação",
+            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
         if (response == JOptionPane.YES_OPTION) {
             System.exit(0);
         }
     }//GEN-LAST:event_btnSairActionPerformed
 
-    private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
-        // TODO add your handling code here:
-        
-        int response = JOptionPane.showConfirmDialog(null,
-                "Deseja limpar os dados?", "Confirmação",
-                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-        if (response == JOptionPane.YES_OPTION) {
-            
-            txfCodigo.setText("");
-            txfDescricao.setText("");
-            txfQuant.setText("");
-            txfValorUnit.setText("");
-        }
-        
-    }//GEN-LAST:event_btnLimparActionPerformed
-
     private void btnGravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGravarActionPerformed
         // TODO add your handling code here:
-        
+
         int response = JOptionPane.showConfirmDialog(null, "Deseja gravar registro?", "Confirmação", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-        
+
         if (response == JOptionPane.YES_OPTION){
-            
+
             DefaultTableModel modelo = (DefaultTableModel) tblCadastro.getModel();
-            
+
             String linha [] = new String [5];
-            
+
             linha[0]=txfCodigo.getText();
             linha[1]=txfDescricao.getText();
             linha[2]=txfQuant.getText();
             linha[3]=txfValorUnit.getText();
             linha[4]=txfSubtotal.getText();
-            
+
             modelo.addRow(linha);
-            
+
             total = total+Double.valueOf(txfSubtotal.getText());
             txfTotalGeral.setText(String.valueOf(total));
+
+            if (txfCodigo.getText().length()>=1){
+
+                modelo.addRow(linha);
+
+                total = total+(Double.parseDouble(txfSubtotal.getText().replace(",",".")));
+                lblTotalGeral.setText(String.valueOf(total));
+
+                txfCodigo.setText("");
+                txfDescricao.setText("");
+                txfQuant.setText("0");
+                txfValorUnit.setText("0");
+                txfSubtotal.setText("0,00");
+                txfCodigo.requestFocus();
+            }
+
         }
-        
+
     }//GEN-LAST:event_btnGravarActionPerformed
+
+    private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
+        // TODO add your handling code here:
+
+        int response = JOptionPane.showConfirmDialog(null,
+            "Deseja limpar os dados?", "Confirmação",
+            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+        if (response == JOptionPane.YES_OPTION) {
+
+            txfCodigo.setText("");
+            txfDescricao.setText("");
+            txfQuant.setText("");
+            txfValorUnit.setText("");
+        }
+
+    }//GEN-LAST:event_btnLimparActionPerformed
 
     private void txfValorUnitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txfValorUnitActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txfValorUnitActionPerformed
 
-    private void txfSubtotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txfSubtotalActionPerformed
-        // TODO add your handling code here:
-        double resultado;
-        
-        resultado=(Double.valueOf(txfValorUnit.getText()))*(Double.valueOf(txfQuant.getText()));
-        txfSubtotal.setText(String.valueOf(resultado));
-        
-    }//GEN-LAST:event_txfSubtotalActionPerformed
-
-    private void txfQuantFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txfQuantFocusLost
-        double resultado;
-        
-        resultado=(Double.valueOf(txfValorUnit.getText()))*(Double.valueOf(txfQuant.getText()));
-        txfSubtotal.setText(String.valueOf(resultado));
-    }//GEN-LAST:event_txfQuantFocusLost
-
     private void txfValorUnitFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txfValorUnitFocusLost
         double resultado;
-        
+
         resultado=(Double.valueOf(txfValorUnit.getText()))*(Double.valueOf(txfQuant.getText()));
         txfSubtotal.setText(String.valueOf(resultado));
     }//GEN-LAST:event_txfValorUnitFocusLost
 
-    private void btnRemoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverActionPerformed
+    private void txfQuantFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txfQuantFocusLost
+        double resultado;
+
+        resultado=(Double.valueOf(txfValorUnit.getText()))*(Double.valueOf(txfQuant.getText()));
+        txfSubtotal.setText(String.valueOf(resultado));
+    }//GEN-LAST:event_txfQuantFocusLost
+
+    private void txfDescricaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txfDescricaoActionPerformed
         // TODO add your handling code here:
-        
-        int response = JOptionPane.showConfirmDialog(null, "Deseja remover o registro ?", "Confirmação", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-        if (response == JOptionPane.YES_OPTION){
-          DefaultTableModel modelo = (DefaultTableModel)tblCadastro.getModel();
-          if(tblCadastro.getSelectedRow()>=0){
-              modelo.removeRow(tblCadastro.getSelectedRow());
-              tblCadastro.setModel(modelo);
-          }
-          else{
-              JOptionPane.showMessageDialog(null, "Favor selecionar uma linha");
-          }
-        }
-    }//GEN-LAST:event_btnRemoverActionPerformed
+    }//GEN-LAST:event_txfDescricaoActionPerformed
 
     
     /**
@@ -419,8 +436,8 @@ public class Painel_produto extends javax.swing.JFrame {
     private javax.swing.JTextField txfCodigo;
     private javax.swing.JTextField txfDescricao;
     private javax.swing.JTextField txfQuant;
-    private javax.swing.JTextField txfSubtotal;
-    private javax.swing.JTextField txfTotalGeral;
+    private javax.swing.JLabel txfSubtotal;
+    private javax.swing.JLabel txfTotalGeral;
     private javax.swing.JTextField txfValorUnit;
     // End of variables declaration//GEN-END:variables
 }
